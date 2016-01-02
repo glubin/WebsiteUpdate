@@ -12,6 +12,25 @@
   <link rel="stylesheet" type="text/css" href="css/hover.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css"> -->
 
+<script>
+// code from http://stackoverflow.com/questions/9278569/equals-heights-of-thumbnails
+  function equalHeight(group) {    
+    var tallest = 0;    
+    group.each(function() {       
+        var thisHeight = $(this).height();       
+        if(thisHeight > tallest) {          
+            tallest = thisHeight * .95;       
+        }    
+    });    
+    group.each(function() { $(this).height(tallest); });
+} 
+
+$(document).ready(function() {   
+    equalHeight($(".thumbnail")); 
+});
+
+</script>
+
 </head>
 
 
@@ -58,7 +77,7 @@
 
           <h1>Projects</h1>
           <h4>Please reach out to me for additional code - personal, academic, and algorithms & data structures.</h4>
-          <br>
+          <br><br><br>
 
         </div>
       </div>
@@ -69,22 +88,24 @@
 
    <div class = "col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com:1200/" target="_blank"><img src ="img/hiking.jpeg" alt = "Generic placeholder thumbnail"></a>
+      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com:1200/" target="_blank"><img  src ="img/nabit.png" alt = "Project Thumbnail"></a>
       <div class="caption">
         <h3 style="color:black">Deals Marketplace</h3>
         <p style="color:black">A website where users can buy and sell goods.</p>
-        <p><a href="https://github.com/glubin/Nab-It" class="btn btn-default" role="button">GitHub</a></p>
+        <br>
+        <p><a href="https://github.com/glubin/Nab-It" class="btn btn-primary" role="button">GitHub</a></p>
       </div>
     </div>
   </div>
 
   <div class = "col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="http://spyfall.greglubin.com/" target="_blank"><img src ="img/hiking.jpeg" alt = "Generic placeholder thumbnail"></a>
+      <a href="http://spyfall.greglubin.com/" target="_blank"><img src ="img/spyfall.png" alt = "Generic placeholder thumbnail"></a>
       <div class="caption">
         <h3 style="color:black">SpyFall Game</h3>
         <p style="color:black">A fan page built to be used in additional to the card game.</p>
-        <p><a href="https://github.com/glubin/Spyfall" class="btn btn-default" role="button">GitHub</a></p>
+        <br>
+        <p><a href="https://github.com/glubin/Spyfall" class="btn btn-primary" role="button">GitHub</a></p>
       </div>
     </div>
   </div>
@@ -92,11 +113,12 @@
 
   <div class = "col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com:2016/" target="_blank"><img src ="img/hiking.jpeg" alt = "Generic placeholder thumbnail"></a>
+      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com:2016/" target="_blank"><img src ="img/chat.png" alt = "Generic placeholder thumbnail"></a>
       <div class="caption">
         <h3 style="color:black">Chat Project</h3>
         <p style="color:black">A public and private chat web-application.</p>
-        <p><a href="https://github.com/glubin/Socket-Project" class="btn btn-default" role="button">GitHub</a></p>
+        <br>
+        <p><a href="https://github.com/glubin/Socket-Project" class="btn btn-primary" role="button">GitHub</a></p>
       </div>
     </div>
   </div>
@@ -104,11 +126,12 @@
 
   <div class = "col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com/fall2015-module5-greg-lubin-424128-dan-mazour-431275/index.php" target="_blank"><img src ="img/hiking.jpeg" alt = "Generic placeholder thumbnail"></a>
+      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com/fall2015-module5-greg-lubin-424128-dan-mazour-431275/index.php" target="_blank"><img src ="img/cal.png" alt = "Generic placeholder thumbnail"></a>
       <div class="caption">
         <h3 style="color:black">Calendar</h3>
         <p style="color:black">A calendar application built with Dan Mazour.</p>
-        <p><a href="#" class="btn btn-default" role="button">To Be Added Shortly</a></p>
+        <br>
+        <p><a href="#" class="btn btn-primary" role="button">To Be Added Shortly</a></p>
       </div>
     </div>
   </div>
@@ -116,22 +139,24 @@
 
   <div class = "col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com:3456/" target="_blank"><img src ="img/hiking.jpeg" alt = "Generic placeholder thumbnail"></a>
+      <a href="http://ec2-52-5-153-154.compute-1.amazonaws.com:3456/" target="_blank"><img src ="img/sweet.png" alt = "Generic placeholder thumbnail"></a>
       <div class="caption">
         <h3 style="color:black">Sweet Nothings SMS Service [In Progress]</h3>
         <p style="color:black">Sign up to randomly send sweet messages to your special someone.</p>
-        <p><a href="https://github.com/glubin/Sweet-Nothings" class="btn btn-default" role="button">GitHub</a></p>
+        <br>
+        <p><a href="https://github.com/glubin/Sweet-Nothings" class="btn btn-primary" role="button">GitHub</a></p>
       </div>
     </div>
   </div>
 
   <div class = "col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src ="img/hiking.jpeg" alt = "Generic placeholder thumbnail">
+      <img src ="img/ice.png" alt = "Generic placeholder thumbnail">
       <div class="caption">
         <h3 style="color:black">Mountain Climb Game</h3>
         <p style="color:black">A mini-game built in a mini-hackathon.</p>
-        <p><a href="https://github.com/glubin/ice-climber-game" class="btn btn-default" role="button">To Be Added Shortly</a></p>
+        <br>
+        <p><a href="https://github.com/glubin/ice-climber-game" class="btn btn-primary" role="button">GitHub</a></p>
       </div>
     </div>
   </div>
