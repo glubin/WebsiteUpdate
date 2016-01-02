@@ -66,7 +66,7 @@ h1{
 }
 
 
-.about {
+.mainImage {
     height: 45%;
     padding-top: 40px;
     text-align: center;
@@ -76,6 +76,20 @@ h1{
 
 }
 
+.projectsImage {
+    height: 45%;
+    padding-top: 40px;
+    text-align: center;
+    background: #eee;
+    background-image: url("../img/hiking.jpeg");
+    background-size: cover;
+
+}
+
+.projectThumbs{
+  margin-left:5px;
+  margin-right:5px;
+}
 
 .threeBar {
     height: 28%;
